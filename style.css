@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    
+}
+.container{
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    position: relative;
+    border-radius: 10px;
+}
+
+.emoji{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    overflow:hidden;
+}
+
+.fa-regular{
+    margin: 1px;
+    transform: translateX(0);
+    transition: transform 0.2s;
+}
+
+.rating{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.fa-star{
+    color: lightgray;
+}
+
+.fa-star.active{
+    color: gold;
+}
